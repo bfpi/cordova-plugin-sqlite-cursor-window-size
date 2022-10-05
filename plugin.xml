@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="cordova-plugin-sqlite-cursor-window-size" version="0.0.1">
+  <name>SQLite sCursorWindowSize initializer</name>
+  <description>Cordova Plugin to initialize SQLite sCursorWindowSize with increased value</description>
+  <license>Apache 2.0</license>
+  <keywords>cordova,sqlite,cursorwindowsize</keywords>
+  <js-module src="www/sqliteCursorWindowSize.js" name="sqliteCursorWindowSize">
+    <clobbers target="cordova.plugins.sqliteCursorWindowSize"/>
+  </js-module>
+
+  <platform name="android">
+    <config-file target="config.xml" parent="/*">
+      <feature name="SQLite-CursorWindowSize">
+        <param name="android-package" value="de.bfpi.cordova.sqlite.CursorWindowSize"/>
+      </feature>
+    </config-file>
+    <source-file src="src/de/bfpi/cordova/sqlite/CursorWindowSize.java" target-dir="src/de/bfpi/cordova/sqlite"/>
+  </platform>
+</plugin>

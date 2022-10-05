@@ -1,0 +1,21 @@
+{
+  "name": "cordova-plugin-sqlite-cursor-window-size",
+  "version": "0.0.1",
+  "description": "Cordova Plugin to initialize SQLite sCursorWindowSize with increased value",
+  "cordova": {
+    "id": "cordova-plugin-sqlite-cursor-window-size",
+    "platforms": ["android"]
+  },
+  "keywords": [
+    "cordova",
+    "sqlite",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": {
+    "name": "BFPI Büro für praktische Informatik GmbH",
+    "email": "info@bfpi.de",
+    "url": "https://bfpi.de"
+  },
+  "license": "Apache 2.0"
+}
